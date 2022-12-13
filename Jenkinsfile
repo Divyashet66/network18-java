@@ -46,7 +46,7 @@ pipeline {
 
                     sh "mvn test -Dtest=TestControllerTests  -DfailIfNoTests=false"
 
-                    sh "mvn clean install sonar:sonar -Dsonar.login=admin -Dsonar.password=sonar"
+                    sh "mvn clean install sonar:sonar -Dsonar.login=admin -Dsonar.password=sonar -Dsonar.projectKey=network-spring" 
 
                 }
 
